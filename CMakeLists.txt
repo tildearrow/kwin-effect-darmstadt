@@ -1,8 +1,8 @@
 cmake_minimum_required (VERSION 3.16)
 
-project (kwin-effect-spotlight)
-set(PROJECT_VERSION "0.1")
-set(PROJECT_VERSION_MAJOR 0)
+project(kwin-effect-darmstadt)
+set(PROJECT_VERSION "1.0")
+set(PROJECT_VERSION_MAJOR 1)
 
 set(QT_MIN_VERSION "6.6.0")
 set(KF_MIN_VERSION "5.248.0")

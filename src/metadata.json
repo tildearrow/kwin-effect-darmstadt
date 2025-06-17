@@ -1,10 +1,9 @@
 {
     "KPlugin": {
         "Category": "Accessibility",
-        "Description": "Spotlight on the pointer when it is quickly moved back and forth",
+        "Description": "Allows Darmstadt screen recorder to retrieve cursor position for Wayland",
         "EnabledByDefault": false,
         "License": "GPL",
-        "Name": "Spotlight"
-    },
-    "X-KDE-ConfigModule": "kwin_spotlight_config"
+        "Name": "Darmstadt Mouse Helper"
+    }
 }

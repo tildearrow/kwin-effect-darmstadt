@@ -1,24 +1,17 @@
-# kwin-effect-spotlight
-"Find My Mouse" effect "Spotlight"
-[Demo](https://jinliu.github.io/kwin-effect-spotlight/Screencast.webm)
+# darmstadt plugin for KWin
 
-## Requirements
+allows darmstadt to retrieve cursor position when using KWin Wayland.
 
-KDE Plasma 6.0 (Wayland session)
+based on [kwin-effect-spotlight](https://github.com/jinliu/kwin-effect-spotlight).
 
-## Installation
+# note
 
-Extract the following package into `/usr/lib/qt6/plugins/`:
-[spotlight-0.1.tar.gz](https://github.com/jinliu/kwin-effect-spotlight/releases/download/v0.1/spotlight-0.1.tar.gz)
+this is an internal use plugin. I won't provide much detail on how to use it, but it should be pretty simple:
 
-## Build
+1. mkdir build
+2. cd build
+3. cmake ..
+4. make
+5. sudo make install
 
-```bash
-cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
-cmake --build build
-sudo cmake --install build
-```
-
-## Thanks
-
-`ShakeDetector.{cpp,h}`: from KDE KWin project (https://invent.kde.org/plasma/kwin/)
+enable the effect in System Settings. this will create a socket in `/tmp/darmcursor` that darmstadt can use to retrieve cursor position.
